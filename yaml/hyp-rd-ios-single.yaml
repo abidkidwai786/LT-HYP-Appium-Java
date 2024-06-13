@@ -5,7 +5,7 @@ testSuiteStep: 150
 
 runson: ios
 
-concurrency: 2
+concurrency: 1
 
 autosplit: true
 

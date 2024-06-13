@@ -28,4 +28,22 @@
             <class name="iOSApp" />
         </classes>
     </test>
+
+    <test name="iOSApp 4">
+        <parameter name="version" value="15" />
+        <parameter name="platform" value="iOS" />
+        <parameter name="device" value="iPhone 13" />
+        <classes>
+            <class name="iOSApp" />
+        </classes>
+    </test>
+
+    <test name="iOSApp 5">
+        <parameter name="version" value="15" />
+        <parameter name="platform" value="iOS" />
+        <parameter name="device" value="iPhone 11" />
+        <classes>
+            <class name="iOSApp" />
+        </classes>
+    </test>
 </suite>

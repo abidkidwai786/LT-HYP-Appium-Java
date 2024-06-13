@@ -5,7 +5,7 @@ testSuiteStep: 150
 
 runson: android
 
-concurrency: 5
+concurrency: 1
 
 autosplit: true
 

@@ -31,7 +31,8 @@ public class iOSApp {
             capabilities.setCapability("platformVersion",version);
             capabilities.setCapability("platformName", platform);
             capabilities.setCapability("isRealMobile", true);
-            capabilities.setCapability("app", "lt://APP1016053741710846398386607"); //Enter your app url
+            //capabilities.setCapability("app", "lt://APP10160251801718219967378689"); //Enter your app url
+            capabilities.setCapability("app", "lt://proverbial-ios");
             capabilities.setCapability("deviceOrientation", "PORTRAIT");
             capabilities.setCapability("console", true);
             capabilities.setCapability("network", false);

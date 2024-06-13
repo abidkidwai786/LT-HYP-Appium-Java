@@ -1,0 +1,24 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'  # Use macOS VM since the CLI is for macOS
+
+stages:
+  - stage: HyperExecute
+    jobs:
+      - job: ExecuteHyper
+        steps:
+          - script: |
+              wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
+            displayName: 'Download HyperExecute CLI'
+
+          - script: |
+              ls
+              chmod u+x hyperexecute
+            displayName: 'Make HyperExecute executable'
+
+          - script: |
+              ls
+              ./hyperexecute -i yaml/hyp-rd-ios-single.yaml -u $LT_USERNAME -k $LT_ACCESS_KEY
+            displayName: 'Run HyperExecute Tests'
